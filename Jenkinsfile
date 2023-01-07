@@ -23,11 +23,11 @@ pipeline{
 				//sh 'node --version'
 				echo 'Build'
 				echo 'build info'
-				echo 'PATH: $PATH'
-				echo 'BUILD_NUMBER : $env.BUILD_NUMBER'
-				echo 'BUIL ID : $env.BUILD_ID'
-				echo 'JOB NAME: $env.JOB_NAME'
-				echo 'BUILD URL: $env.BUILD_URL'
+				echo 'PATH: %PATH%'
+				echo 'BUILD_NUMBER : %env.BUILD_NUMBER%'
+				echo 'BUIL ID : %env.BUILD_ID%'
+				echo 'JOB NAME: %env.JOB_NAME%'
+				echo 'BUILD URL: %env.BUILD_URL%'
 			}
 		}
 		stage('Test'){
