@@ -42,7 +42,7 @@ pipeline{
 			}
 		}
 
-		/* stage('Compile'){
+		stage('Compile'){
 			steps{
 				sh 'mvn clean compile'
 			}
@@ -67,9 +67,9 @@ pipeline{
 		stage('Build Docker Image'){
 
 			steps{
-				//docker build -t sachinsan2131/currency-exchange-devops:$env.BUILD_TAG
+				//docker build -t sachinsan2131/currency-exchange-devops:$env.BUILD_NUMBER
 				script{
-					dockerImage= docker.build("/sachinsan2131/currency-exchange-devops:${env.BUILD_TAG}")
+					dockerImage= docker.build("/sachinsan2131/currency-exchange-devops:${env.BUILD_NUMBER}")
 				}
 			}
 		}
@@ -83,7 +83,7 @@ pipeline{
 					}
 				}
 			}
-		} */
+		}
 	} 
 	post {
 		always {
