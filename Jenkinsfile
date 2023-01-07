@@ -15,13 +15,19 @@
 // Declarative
 //with declarative checkout is automated
 pipeline{
-	//agent any
-	agent { docker { image 'node:13.8'}}
+	agent any
+	//agent { docker { image 'node:13.8'}}
 	stages{
 		stage('Build'){
 			steps{
-				sh 'node --version'
+				//sh 'node --version'
 				echo 'Build'
+				echo 'build info'
+				echo 'PATH: $PATH'
+				echo 'BUILD_NUMBER : $env.BUILD_NUMBER'
+				echo 'BUIL ID : $env.BUILD_ID'
+				echo 'JOB NAME: $env.JOB_NAME'
+				echo 'BUILD URL: $env.BUILD_URL'
 			}
 		}
 		stage('Test'){
