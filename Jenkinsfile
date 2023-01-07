@@ -31,6 +31,8 @@ pipeline{
 				echo 'Build'
 				echo "PATH - $PATH"
 				echo "BUILD_URL - $env.BUILD_URL"
+				echo "BUILD_TAG - $env.BUILD_TAG"
+				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 				/* echo 'build info'
 				echo 'PATH: $PATH'
 				echo 'BUILD_NUMBER : $env.BUILD_NUMBER'
@@ -40,7 +42,7 @@ pipeline{
 			}
 		}
 
-		stage('Compile'){
+		/* stage('Compile'){
 			steps{
 				sh 'mvn clean compile'
 			}
@@ -81,7 +83,7 @@ pipeline{
 					}
 				}
 			}
-		}
+		} */
 	} 
 	post {
 		always {
