@@ -1,0 +1,6 @@
+com\example\microservices\currencyexchangeservice\cucumber\CucumberSpringContextConfiguration.class
+com\example\microservices\currencyexchangeservice\cucumber\HelloWorldSteps.class
+com\example\microservices\currencyexchangeservice\resource\CurrencyExchangeControllerTest.class
+com\example\microservices\currencyexchangeservice\cucumber\RunCucumberIntegrationTestCase.class
+com\example\microservices\currencyexchangeservice\cucumber\CurrencyExchangeSteps.class
+com\example\microservices\currencyexchangeservice\CurrencyExchangeServiceApplicationTests.class

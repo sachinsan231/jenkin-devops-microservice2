@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.488 s <<< FAILURE! - in com.example.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest
+imHealthy(com.example.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest)  Time elapsed: 0.08 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class groovy.lang.GroovySystem
+
+retrieveExchangeValue(com.example.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest)  Time elapsed: 0.065 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class groovy.lang.GroovySystem
+
